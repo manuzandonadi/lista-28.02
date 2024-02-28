@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+   
+</head>
+<body>
+    <h2 style="background-color:purple; color:white;">SISTEMA DE GESTÃO ACADÊMICA</h2>
+    <p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p>
+    
+    <form action="ondevai.php">
+        <p><label for="ilog">Login: </label> 
+            <input type="text" name="login" id="ilogin">
+        </p>
+       
+        <p><label for="isenha">Senha:</label> 
+           <input type="text" name="senha" id="isenha">
+        </p> 
+        
+        <p><label for="istatus">Status:</label> 
+            <select name="Status" id="Status">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+        </p>
+
+        <p> <label for="tipo">Tipo:</label>
+                <input type="radio" id="tec" name="tipo" value="tec">
+                <label for="tec">Técnico</label>
+                <input type="radio" id="prof" name="tipo" value="prof">
+                <label for="prof">Professor</label>
+                <input type="radio" id="aluno" name="tipo" value="aluno">
+                <label for="aluno">Aluno</label>
+        </p>
+
+        <p> <label for="datac">Data criação:</label>
+            <input type="date" id="datac" name="datac">
+        </p>
+
+        <p> <label for="perfil">Perfil:</label>
+                <input type="radio" id="conv" name="tipo" value="conv">
+                <label for="conv">Convidado</label>
+                <input type="radio" id="adm" name="tipo" value="adm">
+                <label for="adm">Administrador</label>
+            
+        </p>
+
+        <p><label for="iobs">Observações:</label></br>
+            <textarea name="coment" id="icoment" cols="30" rows="10"></textarea>
+        </p>
+        
+        <p><label for="mod">Módulos:</label> 
+        <input type="checkbox" id="comp" name="comp" value="comp">
+        <label for="comp"> Compras </label>
+        <input type="checkbox" id="bib" name="bib" value="bib">
+        <label for="bib"> Biblioteca </label>
+        <input type="checkbox" id="acad" name="acad" value="acad">
+        <label for="acad"> Acadêmico </label>
+        <input type="checkbox" id="doc" name="doc" value="doc">
+        <label for="doc"> Documentação </label>
+        <input type="checkbox" id="rh" name="rh" value="rh">
+        <label for="rh"> Recursos Humanos </label><br>
+    </p>
+
+        
+        <p> <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+        </p>
+        
+    </form>
+    
+</body>
+</html>
